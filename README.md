@@ -18,7 +18,7 @@
 
 ## 📖 Project Overview :
 
-CF-Hook uses C++ lonely and a excelent library called "MinHook" and it hooks a NT function called "NtCreateFile", this project had the main focus on the service "SysMain" or "SuperFetch", after injecting the DLL of the Hook it will hook the "NtCreateFile" and verifying if the Prefetch was going to create a file ".pf" to a file, that us can modify in the code of the hook, then we return STATUS_UNSUCESSFUL if it was going to create the ."pf" file
+CF-Hook uses C++ lonely and a excelent library called "MinHook" and it hooks a NT function called "NtCreateFile", this project had the main focus on the service "SysMain" or "SuperFetch", after injecting the DLL of the Hook it will hook the "NtCreateFile" and verifying if the Prefetch was going to create a file ".pf" to a file, that us can modify in the code of the hook, then we return STATUS_UNSUCESSFUL if it was going to create the ."pf" file, if you want remove the hook before you can run the hookRemover, that will write the bool variable to true, unloading the dll
 
 You can easily modify it since its 100% open-source.
 
